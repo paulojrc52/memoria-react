@@ -65,17 +65,19 @@ body {
 
 #gameOver {
   position: absolute;
+  display: flex;
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
   font-size: 45px;
   text-align: center;
-  display: none;
+  /* display: none; */
   justify-content: center;
   align-items: center;
   flex-direction: column;
   top: 0;
+  left: 0;
 }
 
 #gameOver button{
