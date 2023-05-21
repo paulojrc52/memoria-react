@@ -2,7 +2,7 @@ import React from "react";
 
 const CardElement = ({ card }) => {
   return (
-    <div id={card.id} className="card">
+    <div id={card.id} className="card flip">
       <div className="card_front">
         <img
         className="icon"
