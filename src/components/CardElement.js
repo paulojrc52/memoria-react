@@ -1,8 +1,8 @@
 import React from "react";
 
-const CardElement = ({ card }) => {
+const CardElement = ({ card, handleFlip }) => {
   return (
-    <div id={card.id} className="card flip">
+    <div onClick={() => handleFlip(card)} id={card.id} className={`card ${card.flipped ? "flip" : ''} `}>
       <div className="card_front">
         <img
         className="icon"

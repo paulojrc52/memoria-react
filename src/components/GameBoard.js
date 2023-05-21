@@ -1,12 +1,12 @@
 import React from "react";
 import CardElement from "./CardElement";
 
-const GameBoard = ({ cards }) => {
+const GameBoard = ({ cards, handleFlip }) => {
   return (
     <div className="container">
       <div id="gameBoard">
         {cards.map((card, index) => 
-          <CardElement key={index} card={card} />
+          <CardElement handleFlip={handleFlip} key={index} card={card} />
         )}
       </div>
     </div>
